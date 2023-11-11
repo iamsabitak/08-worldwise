@@ -1,5 +1,9 @@
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+    WorldWise
+    </div>
+  );
 }
 
 export default App;

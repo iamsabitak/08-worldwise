@@ -1,9 +1,14 @@
 .nav {
-  background-color: rgb(205, 242, 255);
+  background-color: orangered;
 }
 .nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  
+}
+:global(.test) {
+  background-color: blue;
+}
+.nav :global(.active){
+  background-color: rgb(0, 149, 255);
 }

@@ -4,7 +4,8 @@ import Pricing from "./pages/Pricing";
 import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import PageNav from "./components/PageNav";
-import AppLayout from "./pages/AppLayout"
+import AppLayout from "./pages/AppLayout";
+
 function App() {
   return (
     <div>

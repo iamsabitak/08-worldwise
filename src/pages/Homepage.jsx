@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import AppLayout from "./AppLayout";
 function Homepage() {
+  
   return (
     <div>
       <AppLayout />

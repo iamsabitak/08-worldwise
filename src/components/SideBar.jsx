@@ -7,6 +7,7 @@ function SideBar() {
     <div className={styles.sidebar}>
       <Logo />
       <AppNav />
+      
       <Outlet/>
       <footer className={styles.footer}>
         <p className={styles.copyrights}>

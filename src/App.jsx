@@ -5,8 +5,12 @@ import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import Login from "./pages/Login";
+import CityList from "./components/CityList";
+import { useState } from "react";
 
 function App() {
+  const [cities, setCities] = useState();
+  const [isLoading, setIsLoading] = useState();
   return (
     <div>
       <BrowserRouter>
@@ -16,8 +20,8 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="app" element={<AppLayout />}>
             <Route index element={<p>LIST</p>} />
-            <Route path="cities" element={<p>List of cities</p>} />
-            <Route path="countries" element={<p>List of countries</p>} />
+            <Route path="cities" element={<CityList />} />
+            <Route path="countries" element={<CityList />} />
             <Route path="form" element={<p>Form</p>} />
           </Route>
           <Route path="/login" element={<Login />} />

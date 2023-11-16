@@ -49,8 +49,8 @@ function App() {
               >
                 <Route path="countries" element={<CountryList />} />
                 <Route index element={<Navigate replace to="cities" />} />
-                <Route path="cities" element={<CityList />} />
                 <Route path="cities/:id" element={<City />} />
+                <Route path="cities" element={<CityList />} />
                 <Route path="form" element={<Form />} />
               </Route>
               <Route path="*" element={<PageNotFound />} />

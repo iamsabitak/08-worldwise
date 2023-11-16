@@ -16,7 +16,9 @@ import { useGeolocation } from "../hooks/useGeolocation";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Button from "./Button";
 
+
 function Map() {
+  
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const {
@@ -40,6 +42,7 @@ function Map() {
     },
     [geolocationPosition]
   );
+
 
   return (
     <div className={styles.mapContainer}>

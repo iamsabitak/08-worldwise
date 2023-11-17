@@ -16,6 +16,7 @@ import { useCities } from "../contexts/CitiesContext";
 import { useNavigate } from "react-router-dom";
 
 export function convertToEmoji(countryCode) {
+  
   const codePoints = countryCode
     .toUpperCase()
     .split("")
@@ -26,6 +27,7 @@ export function convertToEmoji(countryCode) {
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
+ 
   const [lat, lng] = useUrlPosition();
   const { createCity, isLoading } = useCities();
   const navigate = useNavigate();
@@ -38,6 +40,7 @@ function Form() {
   const [emoji, setEmoji] = useState("");
   const [geocodingError, setGeocodingError] = useState("");
 
+  
   useEffect(
     function () {
       if (!lat && !lng) return;
@@ -71,7 +74,6 @@ function Form() {
     },
     [lat, lng]
   );
-
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -96,6 +98,8 @@ function Form() {
     return <Message message="Start by clicking somewhere on the map" />;
 
   if (geocodingError) return <Message message={geocodingError} />;
+
+  
 
   return (
     <form

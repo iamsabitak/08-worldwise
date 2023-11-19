@@ -27,7 +27,6 @@ function Map() {
     getPosition,
   } = useGeolocation();
   const [mapLat, mapLng] = useUrlPosition();
-
   useEffect(
     function () {
       if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
@@ -42,7 +41,6 @@ function Map() {
     },
     [geolocationPosition]
   );
-
 
   return (
     <div className={styles.mapContainer}>

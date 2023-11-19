@@ -1,5 +1,7 @@
+
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
+
 import {
   createContext,
   useEffect,
@@ -144,8 +146,7 @@ function CitiesProvider({ children }) {
       });
     }
   }
-
-  return (
+return (
     <CitiesContext.Provider
       value={{
         cities,

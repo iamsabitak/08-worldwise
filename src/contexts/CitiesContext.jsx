@@ -129,7 +129,6 @@ function CitiesProvider({ children }) {
       });
     }
   }
-
   async function deleteCity(id) {
     dispatch({ type: "loading" });
 

@@ -44,6 +44,7 @@ function Map() {
 
   return (
     <div className={styles.mapContainer}>
+      
       {!geolocationPosition && (
         <Button type="position" onClick={getPosition}>
           {isLoadingPosition ? "Loading..." : "Use your position"}
@@ -60,6 +61,7 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
+        
         {cities.map((city) => (
           <Marker
             position={[city.position.lat, city.position.lng]}

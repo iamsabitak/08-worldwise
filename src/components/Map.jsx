@@ -18,7 +18,6 @@ import Button from "./Button";
 
 
 function Map() {
-  
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const {

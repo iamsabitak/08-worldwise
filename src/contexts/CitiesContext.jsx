@@ -107,7 +107,6 @@ function CitiesProvider({ children }) {
     },
     [currentCity.id]
   );
-
   async function createCity(newCity) {
     dispatch({ type: "loading" });
 

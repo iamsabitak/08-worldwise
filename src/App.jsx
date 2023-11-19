@@ -31,8 +31,10 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 function App() {
   return (
     <AuthProvider>
+
       <CitiesProvider>
-        <BrowserRouter>
+        
+      <BrowserRouter>
           <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
               <Route index element={<Homepage />} />
@@ -57,6 +59,7 @@ function App() {
             </Routes>
           </Suspense>
         </BrowserRouter>
+
       </CitiesProvider>
     </AuthProvider>
   );

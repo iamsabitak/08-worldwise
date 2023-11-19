@@ -162,7 +162,6 @@ return (
     </CitiesContext.Provider>
   );
 }
-
 function useCities() {
   const context = useContext(CitiesContext);
   if (context === undefined)

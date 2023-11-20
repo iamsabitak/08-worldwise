@@ -31,7 +31,6 @@ function Form() {
   const [lat, lng] = useUrlPosition();
   const navigate = useNavigate();
   const { createCity, isLoading } = useCities();
-
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false);
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
@@ -40,7 +39,6 @@ function Form() {
   const [emoji, setEmoji] = useState("");
   const [geocodingError, setGeocodingError] = useState("");
 
-  
   useEffect(
     function () {
       if (!lat && !lng) return;
@@ -75,6 +73,7 @@ function Form() {
     [lat, lng]
   );
   
+  
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -99,9 +98,6 @@ function Form() {
     return <Message message="Start by clicking somewhere on the map" />;
 
   if (geocodingError) return <Message message={geocodingError} />;
-
-  
-
   return (
     <form
       className={`${styles.form} ${isLoading ? styles.loading : ""}`}
@@ -146,3 +142,7 @@ function Form() {
 }
 
 export default Form;
+
+  
+
+  

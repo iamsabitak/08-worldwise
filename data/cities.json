@@ -25,28 +25,52 @@
       "id": 17806751
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": 98443197
-    },
-    {
-      "cityName": "Nijar",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-04-03T07:47:59.202Z",
+      "cityName": "Chassignolles",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-11-22T06:03:28.221Z",
       "notes": "",
       "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
+        "lat": "46.5286346952717",
+        "lng": "1.9555664062500002"
       },
-      "id": 98443198
+      "id": 73930389
+    },
+    {
+      "cityName": "Rudersdorf",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-11-22T06:03:45.089Z",
+      "notes": "",
+      "position": {
+        "lat": "52.482780222078226",
+        "lng": "13.798828125000002"
+      },
+      "id": 73930390
+    },
+    {
+      "cityName": "Minsk",
+      "country": "Belarus",
+      "emoji": "🇧🇾",
+      "date": "2023-11-22T06:03:59.667Z",
+      "notes": "",
+      "position": {
+        "lat": "53.839563678833606",
+        "lng": "27.663574218750004"
+      },
+      "id": 73930392
+    },
+    {
+      "cityName": "Vilnius County",
+      "country": "Lithuania",
+      "emoji": "🇱🇹",
+      "date": "2023-11-22T06:04:06.890Z",
+      "notes": "",
+      "position": {
+        "lat": "54.584796743678744",
+        "lng": "25.356445312500004"
+      },
+      "id": 73930393
     }
   ]
 }
